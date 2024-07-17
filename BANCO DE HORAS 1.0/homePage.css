@@ -13,24 +13,19 @@ body {
     background-color: #e3e9f7;
 }
 
-
-
-
-
-/*MENU LATERAL*/
+/* MENU LATERAL */
 #sidebar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: #ffffff;
     height: 100vh;
-    border-radius: 0px 18px 18px 0px;
+    border-radius: 0 18px 18px 0;
     position: relative;
-    transition: all .5s;
+    transition: all 0.5s;
     min-width: 82px;
     z-index: 2;
 }
-
 
 #sidebar_content {
     padding: 12px;
@@ -63,13 +58,13 @@ body {
 #side_items {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 2px;
     list-style: none;
 }
 
 .side-item {
     border-radius: 8px;
-    padding: 14px;
+    padding: 8px;
     cursor: pointer;
 }
 
@@ -121,7 +116,8 @@ body {
     background-color: transparent;
 }
 
-#open_btn  {
+/* Expandir menu */
+#open_btn {
     position: absolute;
     top: 30px;
     right: -10px;
@@ -135,24 +131,21 @@ body {
 }
 
 #open_btn_icon {
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
 }
 
-.open-sidebar #open_btn_icon {
-    transform: rotate(180deg);
-}
 .open-sidebar #open_btn_icon {
     transform: rotate(180deg);
 }
 
 .item-description {
-    width: 0px;
+    width: 0;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     font-size: 14px;
-    transition: width .6s;
-    height: 0px;
+    transition: width 0.6s;
+    height: 0;
 }
 
 #sidebar.open-sidebar {
@@ -169,153 +162,41 @@ body {
     gap: 14px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*FORMULARIO*/
-.formulario{
+/* FORMULÁRIO */
+.formulario {
     margin-top: 20px;
     height: 500px;
     width: 400px;
-    background-color:rgb(219, 219, 219);
+    background-color: rgb(219, 219, 219);
     text-align: center;
-    margin-left: 30%;
+    margin-left: 40%;
     position: fixed;
     border-radius: 5%;
-
 }
 
-.informHoras{
-    margin-top: 600px;
-    height: 100px;
-    width: 400px;
-    background-color:#dddcdc;
-    text-align: center;
-    margin-left: 30%;
-    position: fixed;
-    border-radius: 1%;
-}
-
-
-
-
-.formulario p{
-    font-size: 30px;
-}
-
-
-
-
-button.action{
-    background-color: #2596be;
-    color: #ffffff;
-    border-radius: 5px;
-    height: 25px;
-    width: 40%;
-}
-
-
-h1{
+h1 {
     margin: 30px;
 }
-p{
-    align-content: center;
-}
 
-
-
-.novaSolicitacao{
-    height: 50px;
-    width: 100%;
-    border-radius: 20px;
-    font-size: 20px;
-    cursor: pointer;
-    align-items: center;
-    text-align: center;
-}
-.enviar{
-    text-align: center;
-}
-
-.submit{
-    height: 25px;
-    width: 50%;
-    border-radius: 5px;
-    font-size: 13px;
-    cursor: pointer;
-    background-color: white;
-  
-}
-
-.submit:hover{
-    background-color: #61c8ee;
-    transition: .2s;
-
-}
-
-
-
-/*BOTÕES  ADM*/
-.submitAprovar,
-.submitRecusar,
-.submit2{
-    text-align: center;
-    height: 25px;
-    width: 40%;
-    border-radius: 5px;
-    font-size: 13px;
-    cursor: pointer;
-
-}
-
-
-.submitAprovar:hover{
-    transition: .2s;
+.submitAprovar:hover {
+    transition: 0.2s;
     background-color: #0f8000;
     text-decoration: white;
-
 }
 
-.submitRecusar:hover{
-    transition: .2s;
+.submitRecusar:hover {
+    transition: 0.2s;
     background-color: #ec0c0c;
     text-decoration: white;
-
 }
 
-.submit2:hover{
-    transition: .2s;
+.submit2:hover {
+    transition: 0.2s;
     background-color: #2596be;
-    
 }
 
-/*alinhemanto formulario*/
-.acao{
+/* Alinhamento formulário */
+.acao {
     height: 50px;
     width: 100%;
     border-radius: 20px;
@@ -323,58 +204,25 @@ p{
     cursor: pointer;
     align-items: center;
     text-align: center;
-
 }
 
-.novaSolicitacao:hover{
-    transition: .2s;
-    background-color: #2596be;
-}
-
-
-
-/* BOTÃO DATA/HORA */
-.data{
-    height: 40px;
-    width: 80%;
-    text-align: center;
-    font-size: 20px;
-    border-radius: 5px;
-}
-
-
-
-
-/*BACK-GROUND FORMULARIO*/
-.body-screen{
-
+/* BACKGROUND FORMULÁRIO */
+.body-screen {
     display: flex;
     background-color: #fafafa80;
     border-radius: 10px;
     padding: 5px;
     height: 500px;
     width: 400px;
-    margin-left: 300px;
+    margin-left: 400px;
     margin-top: 30px;
-    margin-right: 10px;  
-    position: fixed; 
+    margin-right: 10px;
+    position: fixed;
     border-color: #2596be;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*IMG PERFIL*/
-#perfil img{
+/* IMG PERFIL */
+#perfil img {
     margin-left: 300px;
     width: 60px;
     height: 60px;
@@ -382,76 +230,55 @@ p{
     cursor: pointer;
     margin-top: 10px;
     margin-left: 10px;
-   
-
 }
 
-/*PERFIL USUÁRIO*/
-#perfil_cont{
-    display: left;
+/* PERFIL USUÁRIO */
+#perfil_cont {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: #bcbcbc;
     height: auto;
-    border-radius: 18px 0px 0px 18px;
+    border-radius: 18px 0 0 18px;
     position: absolute;
-    transition: all .5s;
+    transition: all 0.5s;
     min-width: 82px;
     z-index: 2;
-    
 }
 
-
-
-
-/*POSIÇÃO PERFIL*/
-.perfil-side{
-
+/* POSIÇÃO PERFIL */
+.perfil-side {
     margin-top: 30px;
-    margin-right: none;
     margin-left: 1085px;
     width: 80px;
     height: 30%;
-    padding: absolute;
     position: fixed;
-       
-
-    
 }
-/*POSIÇÃO LINKS PERFIL*/
-.perfil{
+
+/* POSIÇÃO LINKS PERFIL */
+.perfil {
     margin-left: -140px;
     margin-top: 200px;
 }
 
-
-/*PERFIL LINKS*/
-ul .item_side_perfil a{
+/* PERFIL LINKS */
+ul .item_side_perfil a {
     color: #ffffff;
-    justify-items: auto; 
+    justify-items: auto;
     margin-left: 10px;
 }
 
-
-
-
-.item_side_perfil{
+.item_side_perfil {
     list-style: none;
 }
-    
 
-
-
-#name_perfil{
+#name_perfil {
     margin-top: -50px;
     margin-left: 90px;
     color: #e3e9f7;
 }
 
-
-
-
-.atividade{
+.atividade {
     width: 50%;
     height: 500px;
     background-color: #ffffff;
@@ -461,17 +288,90 @@ ul .item_side_perfil a{
     border-radius: 20px;
 }
 
-.atividade h1{
+.atividade h1 {
     text-align: center;
 }
 
-input{
-
-    padding: 10px, 20px;
-}
-
-form.data{
+form.data {
     text-align: center;
     margin-left: 40px;
 }
 
+/* Novo formulário (atual) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 1px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 15px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+h5 {
+    text-align: center;
+}
+
+.requestsTableBody {
+    background-color: #0a0a0a;
+}
