@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxas Trabalhistas da Empresa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        h1 {
+            color: #333;
+        }
+        .update-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .update-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+</body>
+</html>
+    <h1>Taxas Trabalhistas da Empresa</h1>
+  
+    <dialog id="modalTaxa">
+        <h1>Atualizar Taxas Trabalhistas</h1>
+        <form id="taxaForm">
+            <label for="taxaNome">Nome da Taxa:</label>
+            <input type="text" id="taxaNome" name="taxaNome" required>
+    
+            <label for="taxaValor">Valor da Taxa (%):</label>
+            <input type="number" id="taxaValor" name="taxaValor" step="0.01" required>
+    
+            <input type="submit" value="Atualizar">
+        </form>
+        <button id="closeModalTaxa">Fechar</button>
+    </dialog>
+    <script>
+        document.getElementById('openModalTimeRequest').addEventListener('click', function() {
+            document.getElementById('modalTimeRequest').showModal();
+        });
+
+        document.getElementById('closeModalTimeRequest').addEventListener('click', function() {
+            document.getElementById('modalTimeRequest').close();
+        });
+
+        document.getElementById('openModalTaxa').addEventListener('click', function() {
+            document.getElementById('modalTaxa').showModal();
+        });
+
+        document.getElementById('closeModalTaxa').addEventListener('click', function() {
+            document.getElementById('modalTaxa').close();
+        });
+
+        document.getElementById('taxaForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const taxaNome = document.getElementById('taxaNome').value;
+            const taxaValor = document.getElementById('taxaValor').value;
+            alert(`Taxa ${taxaNome} foi atualizada para ${taxaValor}%`);
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tipo de Taxa</th>
+                <th>Descrição</th>
+                <th>Valor (%)</th>
+            </tr>
+        </thead>
+        <tbody id="taxas-table">
+            <tr>
+                <td>INSS</td>
+                <td>Instituto Nacional do Seguro Social</td>
+                <td id="inss">20%</td>
+            </tr>
+            <tr>
+                <td>FGTS</td>
+                <td>Fundo de Garantia do Tempo de Serviço</td>
+                <td id="fgts">8%</td>
+            </tr>
+            <tr>
+                <td>IRRF</td>
+                <td>Imposto de Renda Retido na Fonte</td>
+                <td id="irrf">Variável</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function atualizarTaxas() {
+            // Exemplo de novas taxas
+            const novasTaxas = {
+                inss: '22%',
+                fgts: '9%',
+                irrf: 'Variável (Atualizado)'
+            };
+
+            // Atualiza os valores na tabela
+            document.getElementById('inss').textContent = novasTaxas.inss;
+            document.getElementById('fgts').textContent = novasTaxas.fgts;
+            document.getElementById('irrf').textContent = novasTaxas.irrf;
+        }
+    </script>
+    <Script></Script>
+</body>
+</html>
